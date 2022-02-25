@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ClothesArea {    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'GowunDodum-Regular';
+}
+
+.ClotheBox {
+    background: #fcffe6;
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1;
+    padding: 3%;
+}
+
+.Text {
+    width: 90vw;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    
+}
+.ClothesInfo {
+    width: 90vw;
+    flex: 1;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 900;    
+    word-break:keep-all;
+}
+
+@media ( min-width: 768px ) {
+    .ClothesArea {
+        margin-top: 3%;
+    }
+    .ClotheBox {
+        width: 100vw;
+        padding: 2%;
+    }
+}
+@media ( min-width: 1400px ) {}

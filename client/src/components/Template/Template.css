@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Template {
+    max-height: 100vh;
+}
+
+.Title {
+    width: 100vw;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'yg-jalnan';
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #7cb305;
+    color: #ffffff;
+}
+
+/* @media ( min-width: 768px ) {}
+@media ( min-width: 1400px ) {} */
