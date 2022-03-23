@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-weather-clothes/static/css/main.c3e6d8df.chunk.css",
+    "main.js": "/react-weather-clothes/static/js/main.51d1141b.chunk.js",
+    "main.js.map": "/react-weather-clothes/static/js/main.51d1141b.chunk.js.map",
+    "runtime-main.js": "/react-weather-clothes/static/js/runtime-main.f7178776.js",
+    "runtime-main.js.map": "/react-weather-clothes/static/js/runtime-main.f7178776.js.map",
+    "static/js/2.56b1b94f.chunk.js": "/react-weather-clothes/static/js/2.56b1b94f.chunk.js",
+    "static/js/2.56b1b94f.chunk.js.map": "/react-weather-clothes/static/js/2.56b1b94f.chunk.js.map",
+    "static/js/3.436cb171.chunk.js": "/react-weather-clothes/static/js/3.436cb171.chunk.js",
+    "static/js/3.436cb171.chunk.js.map": "/react-weather-clothes/static/js/3.436cb171.chunk.js.map",
+    "index.html": "/react-weather-clothes/index.html",
+    "static/css/main.c3e6d8df.chunk.css.map": "/react-weather-clothes/static/css/main.c3e6d8df.chunk.css.map",
+    "static/js/2.56b1b94f.chunk.js.LICENSE.txt": "/react-weather-clothes/static/js/2.56b1b94f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-weather-clothes/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7178776.js",
+    "static/js/2.56b1b94f.chunk.js",
+    "static/css/main.c3e6d8df.chunk.css",
+    "static/js/main.51d1141b.chunk.js"
+  ]
+}
