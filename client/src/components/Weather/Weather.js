@@ -6,8 +6,8 @@ function Weather(props) {
     const backImage = document.querySelector('.WeatherArea');
     const currentTemp = props.temperature;  // 현재 날씨 받아오기
     
-    console.log(currentTemp);
-    console.log(backImage);
+    //console.log(currentTemp);
+    //console.log(backImage);
     // 온도별 계절 기준 정하기
     const winter = currentTemp <= 4;
     const earlyWinter = currentTemp > 4 && currentTemp < 9;
@@ -46,6 +46,7 @@ function Weather(props) {
             <div className='TempInfo'>
                 <div className='text'><span>{props.place}</span></div>
                 <div className='Temp'> {Math.round(props.temperature*10)/10} ℃ </div>
+                <div className='Desc'> <span>{props.weatherDesc}</span></div>
             </div>
             <div className='WeatherInfo'>
                 <div> 체감 기온은 {Math.round(props.feelTemp*10)/10} ℃ </div>

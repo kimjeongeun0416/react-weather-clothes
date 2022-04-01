@@ -14,6 +14,7 @@ function App(props) {
   const [lat, setLat] = useState();
   const [long, setLong] = useState();
   const [status, setStatus] = useState();
+  const [weather, setWeather] = useState();
 
  // Geolocation으로 현재 위치의 위/경도 알아오기
   const getLocation = () => {
@@ -34,16 +35,18 @@ function App(props) {
   
   useEffect(() => {
       getLocation();
-      console.log(lat, long);
       //let currentWeather = `${API_URL}?q=incheon&appid=${API_KEY}&units=metric`;
-      const currentWeather = `${API_URL}?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`;
-      
-      fetch(currentWeather)
-          .then(response => response.json())
-          .then(response => {
-              //console.log(response);
-              setCurrentWeathers(response);
-          })
+      const currentWeather = `${API_URL}?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric&lang=kr`;
+
+      if (lat && long ) {
+        fetch(currentWeather)
+            .then(response => response.json())
+            .then(response => {
+                const weathers = response.weather[response.weather.length - 1];
+                setCurrentWeathers(response);
+                setWeather(weathers.description);
+            })
+        }
 
   }, [lat,long]);
 
@@ -55,6 +58,7 @@ function App(props) {
         feelTemp = {currentWeathers.main?.feels_like}
         minTemp = {currentWeathers.main?.temp_min}
         maxTemp = {currentWeathers.main?.temp_max}
+        weatherDesc = {weather}
       />
       <Clothes 
         currentTemp = {currentWeathers.main?.temp}
